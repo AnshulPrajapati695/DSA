@@ -45,6 +45,18 @@ void comb(int n,int r){
     cout<< (fact_n / (fact_r*fact_nmr)) <<endl;
 }
 
+//permutation
+void per(int n,int r){
+    if (n<r){
+        cout<<"Number of object can not be smaller than selection\n";
+        return;
+    }
+    int fact_n = fact(n);
+    int fact_nmr = fact(n-r);
+
+    cout<< (fact_n / fact_nmr) <<endl;
+}
+
 //prime or not 
 bool isprime(int n){
     int detect = 0;
@@ -97,6 +109,7 @@ int main(){
     //comb(6,3);
     //cout<<isprime(12)<<endl;
     //print_prime(20);
-    fib(10);
+    //fib(10);
+    per(6,3);
     return 0;
 }
