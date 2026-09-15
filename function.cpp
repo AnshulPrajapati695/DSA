@@ -101,8 +101,12 @@ void fib(int n){
     }
 }
 
+void display(){
+    cout<<"Welcome to DSA in C++\n"<<"Hello! Let's make some functions in C++\n";
+}
 //main function
 int main(){
+    display();
     // sum(5);
     // fact(5);
     //digit_sum(55);
